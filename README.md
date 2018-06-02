@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# NexT
 
-You can use the [editor on GitHub](https://github.com/leonharetd/leonhardt/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> 精于心，简于形
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
 
-### Markdown
+<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.com" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-```markdown
-Syntax highlighted code block
+![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## 浏览器支持 Browser support
 
-1. Numbered
-2. List
+![Browser support](http://iissnan.com/nexus/next/browser-support.png)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## 贡献 Contributing
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+欢迎提交问题与需求，修复代码。
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leonharetd/leonhardt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 开发 Development
 
-### Support or Contact
+NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+NexT is built for easily use with elegant appearance. First things first, always keep things simple.
+
+
+## 捐赠
+
+支付宝捐赠链接还是要有的，万一真的有人捐呢。
+
+![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
