@@ -1,0 +1,46 @@
+<div class='ListMeta'>
+  <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+  </span>
+  <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+    <%= date(post.date, theme.date_format) %>
+  </time>
+
+  <% if (post.tags && post.tags.length){ %>
+  | 
+  <span class="post-meta-item-icon">
+    <i class="fa fa-tags"></i>
+  </span>
+  <ul>
+    <%- partial('tag-list', { className: 'meta-text', tags: post.tags }) %>
+  </ul>
+  <% } %>
+  <% if (post.categories && post.categories.length){ %>
+  / 
+  <ul>
+    <%- partial('tag-list', { className: 'meta-text', tags: post.categories }) %>
+  </ul>
+  <% } %>
+
+  <% if(theme.reading_info && is_post()) { %>
+    <div class="post-intro-read">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-file-word-o"></i>
+      </span>
+      <span><%- __('word_count') %>: <span class="post-count word-count">
+        <%= wordcount(page.content) %>
+      </span>
+      <span class="post-meta-item-icon">
+          <i class="fa fa-clock-o"></i>
+        </span>
+        <%= __('reading_time') %>: <span class="post-count reading-time">
+        <%= min2read(page.content) %> min</span>
+      </span>
+      <span class="post-meta-item-icon"><i class="fa fa-file-o"></i> 浏览
+            <span class="post-count busuanzi-value" id="busuanzi_value_page_pv"></span>次
+      </span>
+    </div>
+  <% } %>
+</div>
+
+

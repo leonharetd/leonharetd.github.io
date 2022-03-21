@@ -1,0 +1,37 @@
+<aside class='SideBar'>
+    <section class='avatar' style="background-image: url(<%= theme.sidebar_background %>)">
+        <div class='av-pic' style="background-image: url(<%= theme.avatar %>)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div><%= config.title %></div>
+        <% if (config.subtitle) { %>
+            <div><%= config.subtitle %></div>
+        <% } %>
+        <ul>
+          <% for (const m in theme.menu) { %>
+            <% if (m === 'Search') { %>
+                <a class="Btn popup-trigger">
+                    <li><%= m %></li>
+                  </a>  
+            <% } else { %>
+                <a href="<%= theme.menu[m] %>" class="Btn">
+                    <li><%= m %></li>
+                  </a>  
+            <% } %>
+          <% } %>
+          <% if (theme.local_search.enable) { %>
+            <%- partial('search') %>
+          <% } %>
+        </ul>
+    </section>
+    <section class="media">
+        <% for (const m in theme.media) { %>
+            <% if (theme.media[m]) { %>
+                <a href="<%- url_for(theme.media[m]) %>">
+                    <img src="/assets/<%= m %>.svg" />
+                </a>
+            <% } %>
+        <% } %>
+    </section>
+</aside>

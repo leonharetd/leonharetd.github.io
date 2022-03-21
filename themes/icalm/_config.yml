@@ -1,0 +1,59 @@
+# Links on sidebar
+menu:
+  Home: /
+  Archive: /archives/
+  Tags: /tags/
+  Categories: /categories/
+  About: /about/
+  Search:
+
+# Pictures shown on the sidebar
+# Use the absolute URL after generating
+avatar: /assets/10416045.png
+sidebar_background: /assets/header.png
+
+rss: /atom.xml
+
+# 站点流量统计，文章阅读量统计
+busuanzi:
+  enable: true
+
+local_search:
+  enable: true
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 10
+
+# 评论系统
+utterance:
+  enable: true
+  # 仓库名字，格式：[user-name]/[repo-name]，如：lanweihong/utterance_repo
+  repo: leonharetd/leonharetd-comment
+  # 主题
+  theme: github-light
+  # 映射配置
+  issue_term: pathname
+  
+# Content
+excerpt_link: Read On »
+
+# Will be shown on the bottom.
+## To add new icon, just copy .svg to source/assets/ and add entries below.
+media:
+  github: https://github.com/leonharetd
+  # facebook: https://www.facebook.com/profile.php?id=100004252391322
+
+source_han_font: true
+
+# Disqus settings
+disqus:
+  # 'disabled' | 'all' | 'post'
+  enable: disabled
+  # Shortname of your disqus website.
+  # See disqus admin
+  shortname:
+
+# Miscellaneous
+favicon:
+
+reading_info: true
