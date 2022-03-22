@@ -113,4 +113,7 @@ reading_info: true
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repository: https://github.com/leonharetd/leonharetd.git
+  local-dir: public
+  branch: main
