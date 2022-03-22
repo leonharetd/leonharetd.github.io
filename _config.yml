@@ -115,5 +115,4 @@ reading_info: true
 deploy:
   type: 'git'
   repository: https://github.com/leonharetd/leonharetd.git
-  local-dir: public
   branch: main
