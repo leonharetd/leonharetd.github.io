@@ -27,7 +27,8 @@ jobs:
         node-version: "12.x"
     - name: Setup Hexo Dependencies
       run: |
-        ls -l      
+        npm install hexo-cli -g
+        npm install      
     
     # - name: Setup Deploy Private Key
     #   env:
