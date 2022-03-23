@@ -6,7 +6,7 @@
         </h1>
       <% } else if (post.title){ %>
         <h1>
-          <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+          <a href="<%= url_for(post.path) %>" target="_self"><%= post.title %></a>
         </h1>
       <% } %>
       <%- partial('meta', { post: post }) %>

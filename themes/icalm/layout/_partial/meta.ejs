@@ -36,9 +36,14 @@
         <%= __('reading_time') %>: <span class="post-count reading-time">
         <%= min2read(page.content) %> min</span>
       </span>
-      <span class="post-meta-item-icon"><i class="fa fa-file-o"></i> 浏览
-            <span class="post-count busuanzi-value" id="busuanzi_value_page_pv"></span>次
+      
+
+      <% if (theme.busuanzi.enable)  { %>
+      <span class="post-meta-item-icon">
+        <i class="fa fa-file-o"></i> 浏览
+        <span class="post-count busuanzi-value" id="busuanzi_value_page_pv"></span>次
       </span>
+     <% } %>
     </div>
   <% } %>
 </div>

@@ -12,7 +12,7 @@
         <ul class="Tags">
           <%- partial('_partial/tag-list', { className: 'tag-list', tags: site.categories }) %>
         </ul>
-      <% } else if ( is_post()){ %>
+      <% } else if (is_post()) { %>
         <%- partial('meta', { post: post }) %>
       <% } %>
       <%- post.content %>

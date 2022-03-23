@@ -8,11 +8,11 @@
   <% } %>
   <% if (theme.source_han_font) { %>
   <% } %>
-  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
-  <%- css('//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css') %>
   <%- css('css/style') %>
   <!-- 代码高亮库 -->
-  <%- css('/lib/highlight/styles/atom-one-dark.min.css') %>
+  <%- css('css/normalize/prism.css') %>
+  <%- js({src: 'js/pager/dist/prism.js'}) %>
+  <!-- <link rel="stylesheet" -->
   <!-- 字体图片库 -->
   <%- css('lib/font-awesome-4.7.0/css/font-awesome.min.css') %>
 </head>
