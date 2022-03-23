@@ -24,34 +24,28 @@ jobs:
     - name: Setup Node.js 12.x 
       uses: actions/setup-node@master
       with:
-        node-version: "12.x"
-    - name: Setup Hexo Dependencies
-      run: |
-        ls -l
-        pwd   
+        node-version: "12.x" 
     - name: Setup Hexo Dependencies
       run: |
         npm install express --registry=https://registry.npm.taobao.org
         npm install hexo-cli -g
-        npm install      
-    
-    # - name: Setup Deploy Private Key
-    #   env:
-    #     HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-    #   run: |
-    #     mkdir -p ~/.ssh/
-    #     echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
-    #     chmod 600 ~/.ssh/id_rsa
-    #     ssh-keyscan github.com >> ~/.ssh/known_hosts
-                
-    # - name: Setup Git Infomation
-    #   run: | 
-    #     git config --global user.name 'leonharetd' 
-    #     git config --global user.email '610288372@qq.com'
-    - name: Deploy Hexo 
+        npm install 
+    - name: Build artifact
       run: |
         hexo clean
         hexo generate 
-        hexo deploy        
-
+        tar --dereference --hard-dereference --directory publish/ -cvf artifact.tar . 
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: github-pages
+        path: ./artifact.tar
+        if-no-files-found: warn
+  depoly: 
+    runs-on: ubuntu-latest 
+    steps:
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v1
 
