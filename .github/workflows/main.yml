@@ -48,10 +48,10 @@ jobs:
     #   run: | 
     #     git config --global user.name 'leonharetd' 
     #     git config --global user.email '610288372@qq.com'
-    # - name: Deploy Hexo 
-    #   run: |
-    #     hexo clean
-    #     hexo generate 
-    #     hexo deploy        
+    - name: Deploy Hexo 
+      run: |
+        hexo clean
+        hexo generate 
+        hexo deploy        
 
 
