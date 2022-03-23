@@ -42,6 +42,7 @@ jobs:
         path: ./artifact.tar
         if-no-files-found: warn
   depoly: 
+    needs: build
     permissions:
       id-token: write
     runs-on: ubuntu-latest 
