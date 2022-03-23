@@ -42,6 +42,8 @@ jobs:
         path: ./artifact.tar
         if-no-files-found: warn
   depoly: 
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest 
     steps:
     # check it to your workflow can access it
@@ -49,6 +51,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v1
       env:
-        token: ${{ secrets.github_token }}
+        token: ${{ github.token }}
 
 
