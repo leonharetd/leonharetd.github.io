@@ -44,6 +44,7 @@ jobs:
   depoly: 
     needs: build
     permissions:
+      id-token: write
       pages: write
       contents: read
     runs-on: ubuntu-latest 
