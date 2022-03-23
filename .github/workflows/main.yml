@@ -34,7 +34,7 @@ jobs:
       run: |
         hexo clean
         hexo generate 
-        tar --dereference --hard-dereference --directory publish/ -cvf artifact.tar . 
+        tar --dereference --hard-dereference --directory public/ -cvf artifact.tar . 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
