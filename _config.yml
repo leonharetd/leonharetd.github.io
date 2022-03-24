@@ -92,7 +92,7 @@ post_asset_folder: true
 marked:
   prependRoot: true
   postAsset: true
-  
+
 relative_link: false
 future: true
 
@@ -136,6 +136,7 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
+
 
 # Pagination
 ## Set per_page to 0 to disable pagination
