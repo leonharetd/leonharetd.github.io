@@ -20,6 +20,7 @@ search:
   limit: 10000
   content: true
 
+
 # 静态资源压缩
 all_minifier: true
 # html压缩
@@ -86,7 +87,12 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
+
 post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
+  
 relative_link: false
 future: true
 
