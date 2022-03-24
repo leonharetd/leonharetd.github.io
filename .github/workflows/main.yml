@@ -47,22 +47,22 @@ jobs:
       id-token: write
       pages: write
       contents: read
+      deployments: write
     runs-on: ubuntu-latest 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - uses: actions/download-artifact@v3
-      with:
-        name: github-pages
-        path: public
-    - name: Deploy to Github Pages
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
-      with:
-        branch: pages # The branch the action should deploy to.
-        folder: public # The folder the action should deploy.
-
-
-    # - name: Deploy to GitHub Pages
-    #   id: deployment
-    #   uses: actions/deploy-pages@v1
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    # - name: Deploy
+    # uses: JamesIves/github-pages-deploy-action@v4.2.5
+    #     with:
+    #       branch: gh-pages # The branch the action should deploy to.
+    #       folder: build # The folder the action should deploy.
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
 
 
 
