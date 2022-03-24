@@ -49,8 +49,10 @@ jobs:
       contents: read
     runs-on: ubuntu-latest 
     steps:
-    # check it to your workflow can access it
-    # from: https://github.com/actions/checkout
+    - uses: actions/download-artifact@v3
+      with:
+        name: github-pages
+        path: public
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
