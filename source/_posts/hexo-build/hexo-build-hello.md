@@ -79,6 +79,5 @@ hexo s
 看到首页
 ![](blog.jpg)
 
-over～
 
 

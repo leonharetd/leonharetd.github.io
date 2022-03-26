@@ -1,5 +1,6 @@
 ---
 title: python编程风格之好的代码逻辑
+date: 2022-03-22 15:52:05
 categories:
  - python
 tags:

@@ -12,8 +12,8 @@ tags:
 </blockquote> 
 
 - [ ] 一、Hello Hexo
-- [ ] 二、Hexo 目录及命令介绍
-- [ ] 三、Hexo 开发介绍
+- [ ] 二、Hexo 使用简介
+- [ ] 三、Hexo 开发简介
 - [ ] 四、Hexo 主题选择
 - [ ] 五、Hexo 插件安装
 - [ ] 六、Hexo 部署到github

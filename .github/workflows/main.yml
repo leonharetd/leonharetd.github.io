@@ -32,7 +32,6 @@ jobs:
         npm install 
     - name: Build artifact
       run: |
-        hexo clean
         hexo generate 
         tar --dereference --hard-dereference --directory public/ -cvf artifact.tar . 
     - name: Upload artifact
